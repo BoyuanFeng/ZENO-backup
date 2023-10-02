@@ -1,0 +1,122 @@
+VGG16 testing. use null parameters and input just to benchmark performance
+finish reading parameters
+vgg vallina forward1
+vgg vallina forward conv11 and 12 finished
+size:[1,16,16,16]
+size:[1,32,8,8]
+vgg vallina forward conv21 and 22 finished
+vgg vallina forward conv31 and 32 33 finished
+size:[1,64,4,4]
+vgg vallina forward conv41  finished
+vgg vallina forward conv42  finished
+vgg vallina forward conv41 and 42 43 finished
+size:[1,128,2,2]
+size:[1,128,1,1]
+vgg vallina forward conv51 and 52 53 finished
+vgg vallina forward fc1 finished
+vgg vallina forward fc2 finished
+vgg vallina forward fc3 finished
+finish forwarding
+z outside [31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+commit time 22.093913ms
+start generating random parameters
+Number of constraints for x commitment 125682
+vgg vallina forward1
+vgg vallina forward conv11 and 12 finished
+size:[1,16,16,16]
+size:[1,32,8,8]
+vgg vallina forward conv21 and 22 finished
+vgg vallina forward conv31 and 32 33 finished
+size:[1,64,4,4]
+vgg vallina forward conv41  finished
+vgg vallina forward conv42  finished
+vgg vallina forward conv41 and 42 43 finished
+size:[1,128,2,2]
+size:[1,128,1,1]
+vgg vallina forward conv51 and 52 53 finished
+vgg vallina forward fc1 finished
+vgg vallina forward fc2 finished
+vgg vallina forward fc3 finished
+Number of constraints for z commitment 39946 accumulated constraints 165628
+Number of constraints for Conv12 4096 accumulated constraints 169724
+Number of constraints for Conv21 1536 accumulated constraints 171260
+Number of constraints for Conv22 1024 accumulated constraints 172284
+Number of constraints for AvgPool2 256 accumulated constraints 172540
+Number of constraints for Conv31 512 accumulated constraints 173052
+Number of constraints for Conv32 512 accumulated constraints 173564
+Number of constraints for Conv33 512 accumulated constraints 174076
+Number of constraints for Conv41 768 accumulated constraints 174844
+Number of constraints for Conv42 512 accumulated constraints 175356
+Number of constraints for Conv42 1536 accumulated constraints 176892
+avg
+size:[1,128,1,1]
+Number of constraints FC1 136 accumulated constraints 177028
+Number of constraints FC2 4 accumulated constraints 177032
+Number of constraints FC3 2 accumulated constraints 177034
+generate_time:23.827950079s
+start inline lcs
+lc_map len:32426604
+prepare_time:25.414356ms
+thread:3 finished, inner_prepare_time:172.178269ms,compute_time:1.416062712s,push_time:110ns
+thread:4 finished, inner_prepare_time:170.238229ms,compute_time:1.49961255s,push_time:120ns
+thread:1 finished, inner_prepare_time:172.661748ms,compute_time:1.526477744s,push_time:110ns
+thread:7 finished, inner_prepare_time:167.935877ms,compute_time:1.689230642s,push_time:100ns
+thread:0 finished, inner_prepare_time:168.318091ms,compute_time:1.699370186s,push_time:100ns
+thread:6 finished, inner_prepare_time:172.416953ms,compute_time:1.714076502s,push_time:100ns
+thread:2 finished, inner_prepare_time:258.050789ms,compute_time:1.779215646s,push_time:90ns
+thread:5 finished, inner_prepare_time:256.674155ms,compute_time:1.865507632s,push_time:90ns
+prepare time:25.414356ms, parallel compute:2.140120151s, insert time:60ns, map_len32426604
+total_time:2.16558544s
+allocate a,b and c
+Setup: total_time:41.541852189s,generate_time:23.827950079s,inline_time:2.165866707s,R1CStoQAP_time:1.462702326s,compute_time:14.085311096s
+setup time 55.438446044s
+random parameters generated!
+
+Number of constraints for x commitment 125682
+vgg vallina forward1
+vgg vallina forward conv11 and 12 finished
+size:[1,16,16,16]
+size:[1,32,8,8]
+vgg vallina forward conv21 and 22 finished
+vgg vallina forward conv31 and 32 33 finished
+size:[1,64,4,4]
+vgg vallina forward conv41  finished
+vgg vallina forward conv42  finished
+vgg vallina forward conv41 and 42 43 finished
+size:[1,128,2,2]
+size:[1,128,1,1]
+vgg vallina forward conv51 and 52 53 finished
+vgg vallina forward fc1 finished
+vgg vallina forward fc2 finished
+vgg vallina forward fc3 finished
+Number of constraints for z commitment 39946 accumulated constraints 165628
+Number of constraints for Conv12 4096 accumulated constraints 169724
+Number of constraints for Conv21 1536 accumulated constraints 171260
+Number of constraints for Conv22 1024 accumulated constraints 172284
+Number of constraints for AvgPool2 256 accumulated constraints 172540
+Number of constraints for Conv31 512 accumulated constraints 173052
+Number of constraints for Conv32 512 accumulated constraints 173564
+Number of constraints for Conv33 512 accumulated constraints 174076
+Number of constraints for Conv41 768 accumulated constraints 174844
+Number of constraints for Conv42 512 accumulated constraints 175356
+Number of constraints for Conv42 1536 accumulated constraints 176892
+avg
+size:[1,128,1,1]
+Number of constraints FC1 136 accumulated constraints 177028
+Number of constraints FC2 4 accumulated constraints 177032
+Number of constraints FC3 2 accumulated constraints 177034
+lc_map len:32426604
+prepare_time:38.593556ms
+thread:6 finished, inner_prepare_time:167.891688ms,compute_time:1.432674665s,push_time:110ns
+thread:2 finished, inner_prepare_time:170.607106ms,compute_time:1.470371955s,push_time:100ns
+thread:4 finished, inner_prepare_time:167.626932ms,compute_time:1.522234499s,push_time:100ns
+thread:1 finished, inner_prepare_time:221.695881ms,compute_time:1.592045518s,push_time:100ns
+thread:0 finished, inner_prepare_time:227.882393ms,compute_time:1.609067815s,push_time:110ns
+thread:5 finished, inner_prepare_time:229.658892ms,compute_time:1.641533195s,push_time:100ns
+thread:3 finished, inner_prepare_time:230.852146ms,compute_time:1.680582479s,push_time:100ns
+thread:7 finished, inner_prepare_time:234.238394ms,compute_time:1.69357157s,push_time:100ns
+prepare time:38.593556ms, parallel compute:1.935300125s, insert time:60ns, map_len32426604
+total_time:1.973958235s
+start generate witness_map
+Prove: total_time:42.288068864s,generate_time:26.012154881s,inline_time:1.97404273s,R1CStoQAP_time:1.322547802s,compute_time:12.97931737s
+prove time 46.047663104s

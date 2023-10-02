@@ -1,0 +1,38 @@
+commit time 194.042546ms
+start generating random parameters
+Number of constraints for x commitment 61618
+Number of constraints for z commitment 39946 accumulated constraints 101564
+Number of constraints for l1 layer commitment 4079168 accumulated constraints 4180732
+Number of constraints for l2 layer commitment 75506 accumulated constraints 4256238
+Use 4 vector SIMD in current FC layer
+Number of constraints for FC1 120946 accumulated constraints 4301678
+Number of constraints for ReLU1 384 accumulated constraints 4302062
+Use 4 vector SIMD in current FC layer
+Number of constraints for FC2 1786 accumulated constraints 4303848
+Total number of FullCircuit inference constraints 4303848
+Number of constraints for ArgmaxCircuitU8 Circuit 18950, Accumulated constraints 4322798
+generate_time:52.51980127s
+start inline lcs
+total inline time:4.657751687s
+allocate a,b and c
+Setup: total_time:77.930080305s,generate_time:52.51980127s,inline_time:6.179022547s,R1CStoQAP_time:4.531913373s,compute_time:14.699335144s
+setup time 81.336316036s
+crs size: 1462949856
+random parameters generated!
+
+Number of constraints for x commitment 61618
+Number of constraints for z commitment 39946 accumulated constraints 101564
+Number of constraints for l1 layer commitment 4079168 accumulated constraints 4180732
+Number of constraints for l2 layer commitment 75506 accumulated constraints 4256238
+Use 4 vector SIMD in current FC layer
+Number of constraints for FC1 120946 accumulated constraints 4301678
+Number of constraints for ReLU1 384 accumulated constraints 4302062
+Use 4 vector SIMD in current FC layer
+Number of constraints for FC2 1786 accumulated constraints 4303848
+Total number of FullCircuit inference constraints 4303848
+Number of constraints for ArgmaxCircuitU8 Circuit 18950, Accumulated constraints 4322798
+total inline time:4.633061368s
+start generate witness_map
+Prove: total_time:96.44618306s,generate_time:56.267485575s,inline_time:6.310884604s,R1CStoQAP_time:12.446795753s,compute_time:21.421012707s
+prove time 97.49923984s
+verification time 17.563009ms

@@ -1,0 +1,54 @@
+LeNet optimized small on CIFAR dataset
+finish reading parameters
+lenet vallina forward
+finish forwarding
+z outside [123, 123, 137, 149, 131, 144, 135, 123, 131, 120]
+commit time 26.970054ms
+start generating random parameters
+is setup mode?: true
+Number of constraints for x commitment 125682
+lenet vallina forward
+is setup mode?: true
+Number of constraints for z commitment 39946 accumulated constraints 165628
+Number of constraints for Conv1 4704 accumulated constraints 170332
+Number of constraints for Relu1 14112 accumulated constraints 184444
+Number of constraints for AvgPool1 1176 accumulated constraints 185620
+Number of constraints for Conv2 1600 accumulated constraints 187220
+Number of constraints for Relu2 4800 accumulated constraints 192020
+Number of constraints for AvgPool2 400 accumulated constraints 192420
+Number of constraints for Conv3 480 accumulated constraints 192900
+Number of constraints for Relu3 1440 accumulated constraints 194340
+Number of constraints FC1 84 accumulated constraints 194424
+Number of constraints for Relu4 252 accumulated constraints 194676
+Number of constraints FC2 10 accumulated constraints 194686
+Number of constraints for ArgmaxCircuitU8 Circuit 18950, Accumulated constraints 213636
+generate_time:4.212793661s
+start inline lcs
+total inline time:2.131912631s
+allocate a,b and c
+Setup: total_time:9.558383078s,generate_time:4.212793661s,inline_time:2.305745752s,R1CStoQAP_time:429.230945ms,compute_time:2.610598729s
+setup time 10.102267697s
+random parameters generated!
+
+is setup mode?: false
+Number of constraints for x commitment 125682
+lenet vallina forward
+is setup mode?: false
+Number of constraints for z commitment 39946 accumulated constraints 165628
+Number of constraints for Conv1 4704 accumulated constraints 170332
+Number of constraints for Relu1 14112 accumulated constraints 184444
+Number of constraints for AvgPool1 1176 accumulated constraints 185620
+Number of constraints for Conv2 1600 accumulated constraints 187220
+Number of constraints for Relu2 4800 accumulated constraints 192020
+Number of constraints for AvgPool2 400 accumulated constraints 192420
+Number of constraints for Conv3 480 accumulated constraints 192900
+Number of constraints for Relu3 1440 accumulated constraints 194340
+Number of constraints FC1 84 accumulated constraints 194424
+Number of constraints for Relu4 252 accumulated constraints 194676
+Number of constraints FC2 10 accumulated constraints 194686
+Number of constraints for ArgmaxCircuitU8 Circuit 18950, Accumulated constraints 213636
+total inline time:2.166745224s
+start generate witness_map
+Prove: total_time:10.99865504s,generate_time:4.377963997s,inline_time:2.295041471s,R1CStoQAP_time:798.976633ms,compute_time:3.526656078s
+prove time 11.023620237s
+verification time 3.206046ms
