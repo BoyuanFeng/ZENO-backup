@@ -235,8 +235,8 @@ where
 
     let end_total = Instant::now();
     let total_time = end_total.duration_since(begin_total);
-    println!("Setup: total_time:{:?},generate_time:{:?},inline_time:{:?},R1CStoQAP_time:{:?},compute_time:{:?}",
-            total_time,generate_time,inline_time,R1CStoQAP_time,compute_time);
+    println!("Setup: total time:{:?},generate time:{:?},circuit computation time:{:?},security computation time:{:?}",
+            total_time,generate_time,inline_time+R1CStoQAP_time,compute_time);
 
     Ok(Parameters {
         vk,

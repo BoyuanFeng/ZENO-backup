@@ -138,8 +138,8 @@ where
     let compute_time = end_compute.duration_since(begin_compute);
     let total_time = end_compute.duration_since(begin_total);
 
-    println!("Prove: total_time:{:?},generate_time:{:?},inline_time:{:?},R1CStoQAP_time:{:?},compute_time:{:?}",
-    total_time,generate_time,inline_time,R1CStoQAP_time,compute_time);
+    println!("Prove: total time:{:?},generate time:{:?},circuit computation time:{:?},security computation time:{:?}",
+            total_time,generate_time,inline_time+R1CStoQAP_time,compute_time);
 
     Ok(Proof {
         a: g_a.into_affine(),
